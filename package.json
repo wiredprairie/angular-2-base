@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "scripts": {
     "start": "tsc && \"npm run tsc:w\" ",
-    "server": "index.js",
+    "server": "node index.js",
     "postinstall": "typings install",
+    "sass:w": "node-sass --watch --recursive --source-map true --output client/styles client/styles",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "typings": "typings install"
+    "typings": "typings install",
+    "watch": "concurrently \"npm run tsc:w\"  \"npm run sass:w\" "
   },
   "license": "ISC",
   "dependencies": {
