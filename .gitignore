@@ -3,6 +3,7 @@
 /dist/
 node_modules
 bower_components
+typings
 
 # Include when developing application packages.
 pubspec.lock
