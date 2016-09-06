@@ -38,3 +38,4 @@ npm-debug.log
 # rollup-test output
 /modules/rollup-test/dist/
 typings/index.d.ts
+client/build/main.js
