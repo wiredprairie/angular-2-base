@@ -1,0 +1,15 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/*?.js": {
+            "when": "$(basename).tsx"
+        },
+        "client/app/**/*.js.map": true,
+        "client/styles/**/*.css.map": true,
+        "client/styles/**/*.css": true
+    }
+} 
