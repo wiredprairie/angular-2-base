@@ -1,15 +1,18 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-import moment from 'moment';
+import * as moment from 'moment';
 
-//const m 
 
 
 @Pipe({
-    name: 'moment'
+    name: 'relativedate'
 })
-export class MomentPipe implements PipeTransform {
-    transform(value: any, args: any[]): any {
-        
+export class RelativePipe implements PipeTransform {
+    transform(date: any, args: any[]): any {
+        if(typeof date !== "undefined" && date !== null) {
+            const m = moment(date);
+            return m.fromNow();
+        }    
+        return "Unknown";
     }
 }
