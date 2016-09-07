@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
-import { RelativePipe } from './pipes/moment.pipe';
-
-// import { AppRoutingModule } from './app.routing'; //TODO: Create app.routing
+import { SmilePipe } from './pipes/smile.pipe';
 
 @NgModule({
     imports: [
         BrowserModule,
-        HttpModule   
+        HttpModule,
+        FormsModule
     ],
-    declarations: [ AppComponent, RelativePipe ],
+    declarations: [ AppComponent, SmilePipe ],
     providers: [/* TODO: Providers go here */],
     bootstrap: [  AppComponent ],
 })
