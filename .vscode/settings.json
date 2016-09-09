@@ -8,6 +8,7 @@
         "**/*?.js": {
             "when": "$(basename).tsx"
         },
+        "**/*.js.map": true,
         "client/app/**/*.js.map": true,
         "client/styles/**/*.css.map": true,
         "client/styles/**/*.css": true

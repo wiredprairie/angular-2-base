@@ -1,0 +1,11 @@
+<div>
+    <h2>Server Status: {{ seriously | json }} </h2>
+    <div>
+        {{ errorMessage | json }}
+    </div>
+    <ul>
+        <li *ngFor="let stat of status  ">
+            {{stat.timestamp}} {{ stat.request }}
+        </li>
+    </ul>
+</div>

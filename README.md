@@ -4,15 +4,16 @@ This is a simple starter project that uses Angular 2 on the client and Hapi on N
 
 # Installation instructions
 
-## Windows
-On Windows:
+Note that Angular currently may need TypeScript > 2.0.  
 
-    npm install --global concurrently typescript typings node-sass nodemon
+## Windows
+
+    npm install --global concurrently typescript typings@next node-sass nodemon
 
 ## Linux / MacOS
 You may need to use `sudo` on Linux or MacOS.
 
-    sudo npm install --global concurrently typescript typings node-sass nodemon
+    sudo npm install --global concurrently typescript@next typings node-sass nodemon
 
 
 # Debugging
