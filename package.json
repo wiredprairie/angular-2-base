@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "debug": "nodemon --debug ./index.js",
+    "debug": "nodemon --debug ./index.js -e js,json,html",
     "start": "tsc && \"npm run tsc:w\" ",
     "server": "node index.js",
     "postinstall": "",

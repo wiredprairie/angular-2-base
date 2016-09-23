@@ -9,4 +9,8 @@ export class AppHomeComponent implements OnInit {
     constructor() { }
 
     ngOnInit() { }
+
+    onWindowResized(size) {
+        console.log(size);
+    }
 }

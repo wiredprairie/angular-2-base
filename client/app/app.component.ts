@@ -1,6 +1,6 @@
 
 import { Component, AfterViewInit } from "@angular/core";
-import "./rxjs-operators";
+
 
 
 @Component({
@@ -18,5 +18,6 @@ export class AppComponent implements AfterViewInit {
 
     ngAfterViewInit() 
     {
+        
     }
  }
